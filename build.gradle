@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Add your dependencies here, if any
+}
+
+task run(type: JavaExec) {
+    main = 'HelloWorld'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
